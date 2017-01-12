@@ -28,4 +28,16 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \derekisbusy\growl\AutoloadExample::widget(); ?>```
+
+// add flash message under category growl...
+
+Yii::$app->getSession()->addFlash('growl', [
+    'type' => 'success',
+    'duration' => 1500,
+    'icon' => 'fa fa-success',
+    'title' => 'Success!',
+    'message' => ',
+]);
+
+// Display growls in your view...
+echo  \derekisbusy\growl\FlashGrowlWidget::widget();```
