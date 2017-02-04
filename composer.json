@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "kartik-v/yii2-widget-growl": "*",
         "yiisoft/yii2": "*"
     },
     "autoload": {
