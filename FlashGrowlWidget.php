@@ -1,13 +1,18 @@
 <?php
 
+/**
+ * @copyright Copyright &copy; Derek Gifford, 2016 - 2017
+ * @package derekisbusy/yii2-flash-growl
+ * @version 1.0.0
+ *
+ * @author derekisbusy https://github.com/derekisbusy
+ */
+
 namespace derekisbusy\growl;
 
 use Yii;
 use yii\helpers\Html;
 
-/**
- * This is just an example.
- */
 class FlashGrowlWidget extends \yii\base\Widget
 {
     public function run()
