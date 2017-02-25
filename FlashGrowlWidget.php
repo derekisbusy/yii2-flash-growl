@@ -17,7 +17,11 @@ class FlashGrowlWidget extends \yii\base\Widget
 {
     public function run()
     {
-        foreach (Yii::$app->session->getAllFlashes(true)['growl'] as $message):
+        $flashes = Yii::$app->session->getAllFlashes(true);
+        if (!isset($flashes['growl'])) {
+            return;
+        }
+        foreach ($flashes['growl'] as $message):
             echo \kartik\widgets\Growl::widget([
                 'type' => (!empty($message['type'])) ? $message['type'] : 'danger',
                 'title' => (!empty($message['title'])) ? Html::encode($message['title']) : 'Title Not Set!',
