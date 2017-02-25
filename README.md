@@ -30,7 +30,6 @@ Once the extension is installed, simply use it in your code by  :
 ```php
 
 // add flash messages under category growl...
-
 Yii::$app->getSession()->addFlash('growl', [
     'type' => 'success',
     'duration' => 1500,
