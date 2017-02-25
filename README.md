@@ -1,5 +1,10 @@
 Growl Flash Messages
 ====================
+
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/derekisbusy/yii2-flash-growl/blob/master/LICENSE.md)
+[![Packagist](https://img.shields.io/packagist/dt/derekisbusy/yii2-flash-growl.svg)](https://packagist.org/packages/derekisbusy/yii2-flash-growl)
+
+
 Widget to output flash messages as growls.
 
 Installation
