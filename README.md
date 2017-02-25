@@ -1,6 +1,6 @@
 Growl Flash Messages
 ====================
-Widget to output all flash messages as growls.
+Widget to output flash messages as growls.
 
 Installation
 ------------
@@ -29,15 +29,20 @@ Once the extension is installed, simply use it in your code by  :
 
 ```php
 
-// add flash message under category growl...
+// add flash messages under category growl...
 
 Yii::$app->getSession()->addFlash('growl', [
     'type' => 'success',
     'duration' => 1500,
     'icon' => 'fa fa-success',
     'title' => 'Success!',
-    'message' => ',
+    'message' => 'Action has been performed.',
 ]);
 
 // Display growls in your view...
-echo  \derekisbusy\growl\FlashGrowlWidget::widget();```
+echo  \derekisbusy\growl\FlashGrowlWidget::widget();
+
+// Or render the _growl view in the controller if you only need to render the growls...
+return $this->renderAjax('@derekisbusy/growl/_growl');
+
+```
