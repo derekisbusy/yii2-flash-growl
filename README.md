@@ -47,6 +47,6 @@ Yii::$app->getSession()->addFlash('growl', [
 echo  \derekisbusy\growl\FlashGrowlWidget::widget();
 
 // Or render the _growl view in the controller if you only need to render the growls...
-return $this->renderAjax('@derekisbusy/growl/_growl');
+return $this->renderAjax('@derekisbusy/yii2-growl/_growl');
 
 ```
